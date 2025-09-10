@@ -59,7 +59,7 @@ curl -LsSf https://astral.sh/uv/install.sh | sh
 3. Install dependencies:
 
 ```bash
-# For basic functionality
+# For basic functionality  因爲使用了 git lfs smudge 報錯會導致無法正常安裝， 可以使用 git lfs install --force --skip-smudge 強制指定，然後再執行下面命令
 uv sync
 
 # For hardware support (Raspberry Pi)
